@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
 
 * {
   margin: 0;
@@ -34,7 +35,7 @@ a {
 .header_navbar_item:hover {
   cursor: pointer;
   color: red;
-  transition: all .3s;
+  transition: all 0.5s;
 }
 
 .header_login i {
@@ -96,3 +97,95 @@ a {
 }
 
 /* header end */
+
+
+/* advertising start */
+
+.advertising_first{
+  background-image: url(./images/h1_hero1.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: none;
+}
+
+.advertising_second{
+  background-image: url(./images/h1_hero2.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: none;
+}
+
+.btn_left{
+  position: absolute;
+  top: 400px;
+  padding: 40px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+.btn_right{
+  position: absolute;
+  top: 400px;
+  right: 0;
+  padding: 40px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+.btn_left:hover, .btn_right:hover{
+  background-color: black;
+  transition: all .5s;
+}
+
+.advertising_about_first{
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  width: 400px;
+  text-align: center;
+}
+
+.advertising_about_second{
+  position: absolute;
+  top: 300px;
+  right: 150px;
+  width: 400px;
+  text-align: center;
+}
+
+.title{
+  font-size: 3rem;
+  color: red;
+  font-family: 'Montez', cursive;
+
+}
+
+.desc{
+  padding: 20px 0;
+  font-size: 2.6rem;
+}
+
+.text{
+  line-height: 2rem;
+  color: gray;
+}
+
+.advertising_btn{
+  margin-top: 20px;
+  padding: 10px 40px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.advertising_btn:hover{
+  background: none;
+  color: black;
+  transition: all .5s;
+}
+
+/* advertising end */
