@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/* header start */
+
+.shop_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header_title:hover {
+  cursor: pointer;
+}
+
+.header_navbar_item {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.header_navbar_item:hover {
+  cursor: pointer;
+  color: red;
+  transition: all .3s;
+}
+
+.header_login i {
+  font-size: 1.3rem;
+  margin: 0 10px;
+}
+
+.header_login i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.header_pages_item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header_blog_about {
+  position: absolute;
+  left: 940px;
+  top: 90px;
+  border-top: 3px solid red;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  padding-right: 60px;
+  display: none;
+}
+
+.blog:hover + .header_blog_about {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_pages_about {
+  position: absolute;
+  left: 840px;
+  top: 90px;
+  border-top: 3px solid red;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  padding-right: 60px;
+  display: none;
+}
+
+.header_pages_item:hover + .header_pages_about {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_navbar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* header end */
