@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -33,14 +37,56 @@
           <a href="#" class="header_navbar_item">Element</a>
           <a href="#" class="header_navbar_item">Blog Details</a>
         </div>
-        <a href="#" class="header_navbar_item">Contact</a>
+        <a href="./contact.html" class="header_navbar_item">Contact</a>
       </nav>
       <div class="header_login">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-user login_user"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
     </header>
+    <div class="menu_card">
+      <a href="#" class="menu_card_item">Home</a>
+      <a href="#" class="menu_card_item">Men</a>
+      <a href="#" class="menu_card_item">Women</a>
+      <a href="#" class="menu_card_item">Baby Collection</a>
+      <div class="header_pages_item">
+        <a href="#" class="menu_card_item">Pages</a>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      
+      <a href="#" class="menu_card_item">Blog</a>
+      
+      <a href="./contact.html" class="menu_card_item">Contact</a>
+    </div>
+    <div class="menu_bar">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="modal">
+      <div class="modal_head">
+        <h1>Login</h1>
+        <p>Enter Login details to get access</p>
+      </div>
+      <form class="modal_form">
+        <div class="modal_form_item">
+          <label for="name">Username Or Email Address</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Username / Email Adress"
+          />
+        </div>
+        <div class="modal_form_item">
+          <label for="passw">Password</label>
+          <input type="password" name="passw" placeholder="Enter Password" />
+        </div>
+        <div>
+          <input type="checkbox" name="check" />
+          <label for="check">Keep Me Logged In</label>
+        </div>
+        <button class="modal_btn">Login</button>
+      </form>
+    </div>
     <main>
       <section class="advertising_first">
         <div class="advertising_about_first">
@@ -54,7 +100,9 @@
           <button class="advertising_btn">shop now</button>
         </div>
       </section>
-      <button class="btn_right"><i class="fa-solid fa-chevron-right"></i></button>
+      <button class="btn_right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
       <button class="btn_left"><i class="fa-solid fa-chevron-left"></i></button>
       <section class="advertising_second">
         <div class="advertising_about_second">
@@ -68,6 +116,306 @@
           <button class="advertising_btn">shop now</button>
         </div>
       </section>
+      <section class="fashion_card">
+        <div class="fashion_cards">
+          <img src="./images/items1.jpg.webp" alt="" />
+          <div class="fashion_cards_box">
+            <a href="#" class="fashion_card_title">Men`s Fashion</a>
+            <button class="fashion_card_btn animate__fadeInUp">Shop Now</button>
+          </div>
+        </div>
+        <div class="fashion_cards">
+          <img src="./images/items2.jpg.webp" alt="" />
+          <div class="fashion_cards_box">
+            <a href="#" class="fashion_card_title">Women`s Fashion</a>
+            <button class="fashion_card_btn animate__fadeInUp">Shop Now</button>
+          </div>
+        </div>
+        <div class="fashion_cards">
+          <img src="./images/items3.jpg.webp" alt="" />
+          <div class="fashion_cards_box">
+            <a href="#" class="fashion_card_title">Baby Fashion</a>
+            <button class="fashion_card_btn animate__fadeInUp">Shop Now</button>
+          </div>
+        </div>
+      </section>
+      <section class="trend">
+        <div class="trend_title">
+          <h1>Trending This Week</h1>
+          <ul>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Baby</li>
+            <li>Fashion</li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="trend_cards">
+            <div class="trend_card">
+              <img
+                class="trend_card_img"
+                src="./images/latest1.jpg.webp"
+                alt=""
+              />
+              <a href="#">Cashmera Tank + Bag</a>
+              <p>$98.00 <del>$120.00</del></p>
+            </div>
+            <div class="trend_card">
+              <img
+                class="trend_card_img"
+                src="./images/latest2.jpg.webp"
+                alt=""
+              />
+              <a href="#">Cashmera Tank + Bag</a>
+              <p>$98.00 <del>$120.00</del></p>
+            </div>
+            <div class="trend_card">
+              <img
+                class="trend_card_img"
+                src="./images/latest3.jpg.webp"
+                alt=""
+              />
+              <a href="#">Cashmera Tank + Bag</a>
+              <p>$98.00 <del>$120.00</del></p>
+            </div>
+            <div class="trend_card">
+              <img
+                class="trend_card_img"
+                src="./images/latest4.jpg.webp"
+                alt=""
+              />
+              <a href="#">Cashmera Tank + Bag</a>
+              <p>$98.00 <del>$120.00</del></p>
+            </div>
+          </div>
+          <button class="trend_btn_left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="trend_btn_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="customer">
+        <div class="customer_wrapper">
+          <h1>Customer Testimonial</h1>
+          <p>
+            Culpa veniam porro labore accusantium consequatur cumque distinctio
+            quisquam voluptatem, laborum enim! Voluptatem pariatur provident
+            voluptatum earum nemo excepturi ipsa velit sequi!
+          </p>
+          <div class="customer_wrapper_user">
+            <img src="./images/founder-img.png.webp" alt="" />
+            <div>
+              <h4>Petey Cruiser</h4>
+              <span>Designed at Colorlib</span>
+            </div>
+          </div>
+        </div>
+        <div class="customer_wrapper">
+          <h1>Customer Testimonial</h1>
+          <p>
+            Culpa veniam porro labore accusantium consequatur cumque distinctio
+            quisquam voluptatem, laborum enim! Voluptatem pariatur provident
+            voluptatum earum nemo excepturi ipsa velit sequi!
+          </p>
+          <div class="customer_wrapper_user">
+            <img src="./images/founder-img.png.webp" alt="" />
+            <div>
+              <h4>Petey Cruiser</h4>
+              <span>Designed at Colorlib</span>
+            </div>
+          </div>
+        </div>
+        <div class="customer_wrapper">
+          <h1>Customer Testimonial</h1>
+          <p>
+            Culpa veniam porro labore accusantium consequatur cumque distinctio
+            quisquam voluptatem, laborum enim! Voluptatem pariatur provident
+            voluptatum earum nemo excepturi ipsa velit sequi!
+          </p>
+          <div class="customer_wrapper_user">
+            <img src="./images/founder-img.png.webp" alt="" />
+            <div>
+              <h4>Petey Cruiser</h4>
+              <span>Designed at Colorlib</span>
+            </div>
+          </div>
+        </div>
+        <button class="customer_btn_next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="customer_btn_prew">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </section>
+      <section class="shoping">
+        <h1>You May Like</h1>
+        <div class="shop_cards">
+          <div class="shop_card">
+            <img src="./images/latest5.jpg.webp" alt="" />
+            <a href="#">Cashmera Tank + Bag</a>
+            <p>$98.00 <del>$120.00</del></p>
+          </div>
+          <div class="shop_card">
+            <img src="./images/latest6.jpg.webp" alt="" />
+            <a href="#">Cashmera Tank + Bag</a>
+            <p>$98.00 <del>$120.00</del></p>
+          </div>
+          <div class="shop_card">
+            <img src="./images/latest7.jpg.webp" alt="" />
+            <a href="#">Cashmera Tank + Bag</a>
+            <p>$98.00 <del>$120.00</del></p>
+          </div>
+          <div class="shop_card">
+            <img src="./images/latest8.jpg.webp" alt="" />
+            <a href="#">Cashmera Tank + Bag</a>
+            <p>$98.00 <del>$120.00</del></p>
+          </div>
+          <button class="shop_btn_left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="shop_btn_right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="news">
+        <h1>Latest News</h1>
+        <div class="news_cards">
+          <div class="news_card">
+            <img src="./images/blog1.jpg.webp" alt="" />
+            <div class="news_card_cap">
+              <span>Fashion Tips</span>
+              <a href="#">What Curling Irons Are The Best Ones</a>
+              <p>
+                Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+                voluptas iure, delectus..
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="news_card">
+            <img src="./images/blog2.jpg.webp" alt="" />
+            <div class="news_card_cap">
+              <span>Fashion Tips</span>
+              <a href="#"
+                >Vogue's Ultimate Guide To Autumn/ Winter 2019 Shoes</a
+              >
+              <p>
+                Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+                voluptas iure, delectus..
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="news_card">
+            <img src="./images/blog3.jpg.webp" alt="" />
+            <div class="news_card_cap">
+              <span>Fashion Tips</span>
+              <a href="#">What Curling Irons Are The Best Ones</a>
+              <p>
+                Consectetur adipisicing elit. Laborum fuga incidunt laboriosam
+                voluptas iure, delectus..
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about_boxes">
+          <div class="about_box right_line">
+            <i class="fa-solid fa-truck"></i>
+            <h1>Fast & Free Delivery</h1>
+            <p>Free delivery on all orders</p>
+          </div>
+          <div class="about_box right_line">
+            <i class="fa-solid fa-id-card"></i>
+            <h1>Secure Payment</h1>
+            <p>Free delivery on all orders</p>
+          </div>
+          <div class="about_box right_line">
+            <i class="fa-solid fa-money-bill-wheat"></i>
+            <h1>Money Back Guarantee</h1>
+            <p>Free delivery on all orders</p>
+          </div>
+          <div class="about_box">
+            <i class="fa-solid fa-headset"></i>
+            <h1>Online Support</h1>
+            <p>Free delivery on all orders</p>
+          </div>
+        </div>
+      </section>
+      <footer class="shop_footer">
+        <div class="subscribe">
+          <div>
+            <h1>Subscribe Newsletter</h1>
+            <p>Subscribe newsletter to get 5% on all products.</p>
+          </div>
+          <form>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              class="footer_input"
+            />
+            <button class="footer_btn">Subscribe</button>
+          </form>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="shop_footer_item">
+          <div class="footer_title">
+            <img src="./images/logo2_footer.png.webp" alt="" />
+          </div>
+          <div>
+            <h1>Shop Men</h1>
+            <ul>
+              <li class="footer_list_first">Clothing Fashion</li>
+              <li class="footer_list">Winter</li>
+              <li class="footer_list">Summer</li>
+              <li class="footer_list">Formal</li>
+              <li class="footer_list">Casual</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Shop Women</h1>
+            <ul>
+              <li class="footer_list_first">Clothing Fashion</li>
+              <li class="footer_list">Winter</li>
+              <li class="footer_list">Summer</li>
+              <li class="footer_list">Formal</li>
+              <li class="footer_list">Casual</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Baby Collection</h1>
+            <ul>
+              <li class="footer_list_first">Clothing Fashion</li>
+              <li class="footer_list">Winter</li>
+              <li class="footer_list">Summer</li>
+              <li class="footer_list">Formal</li>
+              <li class="footer_list">Casual</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Quick Links</h1>
+            <ul>
+              <li class="footer_list_first">Track Your Order</li>
+              <li class="footer_list">Support</li>
+              <li class="footer_list">FAQ</li>
+              <li class="footer_list">Carrier</li>
+              <li class="footer_list">About</li>
+              <li class="footer_list">Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
     <script
       src="https://kit.fontawesome.com/3bedad61df.js"
