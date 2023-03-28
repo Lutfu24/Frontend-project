@@ -233,6 +233,7 @@ a {
     background: none;
     border: 1px solid red;
     color: red;
+    cursor: pointer;
 }
 
 .cont_btn:hover{

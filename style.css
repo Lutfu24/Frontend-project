@@ -298,6 +298,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 40px;
 }
@@ -306,6 +307,38 @@ a {
   width: 300px;
   height: 340px;
   text-align: center;
+  position: relative;
+}
+
+.add_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* display: none; */
+}
+
+/* .trend_card img:hover + .add_btn {
+  display: block;
+} */
+
+.add_btn button {
+  border: none;
+}
+
+.add_btn button:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  transition: all 0.5s;
+}
+
+.add_btn i {
+  padding: 15px 20px;
+  font-size: 1.6rem;
 }
 
 .trend_card img {
@@ -705,7 +738,7 @@ a {
 }
 
 .open {
- height: 300px;
+  height: 300px;
 }
 
 .menu_card_item {
@@ -722,13 +755,13 @@ a {
   align-items: center;
   background-color: #677f8b;
   color: white;
- z-index: 400;
+  z-index: 400;
   /* border: 1px solid black; */
   position: absolute;
   right: 50px;
   overflow: hidden;
- height: 0;
- transition: all 1s linear;
+  height: 0;
+  transition: all 1s linear;
 }
 
 /* modal button */

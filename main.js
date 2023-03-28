@@ -116,3 +116,81 @@ window.addEventListener("click", (e) => {
     menu_card.style.height = "0";
   }
 });
+
+// add to card
+
+const product = [
+  {
+    id: 1,
+    img: "./images/latest1.jpg.webp",
+    a: "Cashmera Tank + Bag",
+    p: "$98.00",
+    del: "$120.00",
+    i1: "fa-solid fa-cart-plus",
+    i2: "fa-regular fa-heart",
+    i3: "fa-solid fa-magnifying-glass-plus",
+  },
+  {
+    id: 2,
+    img: "./images/latest2.jpg.webp",
+    a: "Cashmera Tank + Bag",
+    p: "$98.00",
+    del: "$120.00",
+    i1: "fa-solid fa-cart-plus",
+    i2: "fa-regular fa-heart",
+    i3: "fa-solid fa-magnifying-glass-plus",
+  },
+  {
+    id: 3,
+    img: "./images/latest3.jpg.webp",
+    a: "Cashmera Tank + Bag",
+    p: "$98.00",
+    del: "$120.00",
+    i1: "fa-solid fa-cart-plus",
+    i2: "fa-regular fa-heart",
+    i3: "fa-solid fa-magnifying-glass-plus",
+  },
+  {
+    id: 4,
+    img: "./images/latest4.jpg.webp",
+    a: "Cashmera Tank + Bag",
+    p: "$98.00",
+    del: "$120.00",
+    i1: "fa-solid fa-cart-plus",
+    i2: "fa-regular fa-heart",
+    i3: "fa-solid fa-magnifying-glass-plus",
+  },
+];
+
+let productCards = document.querySelector(".trend_cards");
+
+product.map((item) => {
+  productCards.innerHTML += `
+  <div class="trend_card">
+  <img
+    class="trend_card_img"
+    src="${item.img}"
+    alt=""
+  />
+  <a href="#">${item.a}</a>
+  <p>${item.p} <del>${item.del}</del></p>
+  <div class="add_btn">
+  <button class="add_product_btn"><i class="${item.i1}"></i></button>
+  <button><i class="${item.i2}"></i></button>
+  <button><i class="${item.i3}"></i></button>
+  </div>
+</div>`;
+});
+
+const productBtn = document.querySelectorAll(".add_product_btn");
+
+let arrProduct = [];
+productBtn.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    const findData = product.find((data) => data.id === index + 1);
+    const hasData = arrProduct.includes(findData);
+    hasData ? arrProduct : arrProduct.push(findData);
+    console.log(hasData);
+    console.log(arrProduct);
+  });
+});
